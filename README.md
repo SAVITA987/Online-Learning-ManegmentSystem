@@ -65,9 +65,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Running end-to-end JUnit Testing
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run `Junit` to execute the end-to-end tests Unit Testing framework for Java. To use junit testing, you need to implements all the operation regarding testing & end-to-end testing capabilities.
 
 ## Further help 💬
 
@@ -104,6 +104,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![Spring Boot](https://img.shields.io/static/v1?style=for-the-badge&message=Spring+Data-JPA&color=6DB33F&logo=Spring&logoColor=FFFFFF&label=)
 ![Spring Boot](https://img.shields.io/static/v1?style=for-the-badge&message=Spring-JWT&color=222222&logo=Spring&logoColor=FFFFFF&label=)
 ![Hibernate](https://img.shields.io/static/v1?style=for-the-badge&message=Hibernate&color=59666C&logo=Hibernate&logoColor=FFFFFF&label=)
+![Junit](https://img.shields.io/static/v1?style=for-the-badge&message=Hibernate&color=59666C&logo=Hibernate&logoColor=FFFFFF&label=)
 
 ## Database 🥅
 
