@@ -1,10 +1,10 @@
 # Online-Learning-ManegmentSystem ❤️
 
-![](https://img.shields.io/github/languages/count/gowthamrajk/ElearningManagementSystem)   ![](https://img.shields.io/github/languages/top/gowthamrajk/ElearningManagementSystem)
+![](https://img.shields.io/github/languages/count/SAVITA987/Online-Learning-ManegmentSystem)   ![](https://img.shields.io/github/languages/top/SAVITA987/Online-Learning-ManegmentSystem)
 
 ## 🔭 Features :
 
-- It is an **Elearning Management System** which can facilitate you to enroll and Learn courses, add those to your wishlist, and also manage the entire application.
+- It is an **Online-Learning Manegment System** which can facilitate you to enroll and Learn courses, add those to your wishlist, and also manage the entire application.
 - It has 3 modes of operation as **1) ADMIN 2) USER 3) PROFESSOR**
 
 ## ADMIN Mode 🔭
