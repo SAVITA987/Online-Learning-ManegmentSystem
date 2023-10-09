@@ -1,4 +1,4 @@
-# Online-Learning-ManegmentSystem
+# Online-Learning Manegment System
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
