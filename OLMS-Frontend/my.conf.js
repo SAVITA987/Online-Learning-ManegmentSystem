@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Fri Sep 15 2023 21:14:14 GMT+0530 (India Standard Time)           .
+// Generated on Fri Sep 15 2023 21:14:14 GMT+0530 (India Standard Time)           
 
 module.exports = function(config) {
   config.set({
