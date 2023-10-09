@@ -1,4 +1,4 @@
-# Online-Learning-ManegmentSystem-Backend
+# Online-Learning Manegment System-Backend
 
 ### Reference Documentation
 For further reference, please consider the following sections:
