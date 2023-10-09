@@ -1,0 +1,110 @@
+<app-header></app-header>
+<div class="continer">
+    <div>
+    <div style="font-weight: bolder; color: darkgreen; font-size: 35px; margin-bottom: 2%;">Welcome to {{courseName}} course 👋 </div>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video1" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video2" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video3" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video4" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video5" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video6" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video7" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video8" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video9" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video10" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video11" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video12" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+    <youtube-player style="margin-right: 5%;" id="player" [videoId]="video13" suggestedQuality="highres" [height]="380" [width]="640"></youtube-player>
+
+
+   
+        <div class="chapter-list" *ngFor="let chapter of chapterlist | async">
+            <div style="font-weight: bold; font-size: large; align-items: center; color: darkred;"><i class="fa fa-list"></i> Course Contents</div>
+            <div style="color: gray; font-weight: 400; font-size: small; margin-bottom: 5%;">
+            
+            </div>
+            <div style="color: red; font-size: medium; font-weight: bolder; margin-top: 30%; margin-left: 5%; margin-right: 5%;" *ngIf="chapter.chapter1name === ''">Currently No Chapters available for this Course. Please wait, the Instructor will be adding the chapters soon here</div>
+    
+            <div style="cursor: pointer;" (click)="set1()" class="chapter1" *ngIf="chapter.chapter1name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter1id)"> 1) {{chapter.chapter1name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter1name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set2()" class="chapter2" *ngIf="chapter.chapter2name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter2id)"> 2) {{chapter.chapter2name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter2name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set3()" class="chapter3" *ngIf="chapter.chapter3name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter3id)"> 3) {{chapter.chapter3name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter3name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set4()" class="chapter4" *ngIf="chapter.chapter4name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter4id)"> 4) {{chapter.chapter4name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter4name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set5()" class="chapter5" *ngIf="chapter.chapter5name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter5id)"> 5) {{chapter.chapter5name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter5name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set6()" class="chapter6" *ngIf="chapter.chapter6name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter6id)"> 6) {{chapter.chapter6name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter6name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set7()" class="chapter7" *ngIf="chapter.chapter7name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter7id)"> 7) {{chapter.chapter7name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter7name !== ''">
+    
+            <div style="cursor: pointer;" (click)="set8()" class="chapter8" *ngIf="chapter.chapter8name !== ''">
+                <div class="name" (click)="openChapter(chapter.chapter8id)"> 8) {{chapter.chapter8name}}</div>
+                <div style="color: gray; font-weight: 600; font-size: small; margin-left: 12%;">subcontents (1/1)</div>
+            </div>
+            <hr *ngIf="chapter.chapter8name !== ''">
+        </div>
+    </div>
+    <div class="sub-container">
+        <div class="sub-btns">
+            <button id="overview-btn" (click)="openOverview()" class="btn btn-info">Overview</button>
+            <hr>
+        </div>
+        <div id="overview" class="descriptions" *ngFor="let course of courselist | async">
+            <strong style="font-weight: bolder; font-size: 25px;">About this Course</strong>
+            <h3 class="card-title text-left" style="margin-top: 1.5%; font-weight: normal; font-size: 21px;">{{course.coursename}}</h3>
+            <h6 class="text-center" style="margin-left: 0; padding: 5px 20px 5px 20px; background-color: darkgoldenrod; border-radius: 5px; font-weight: bold; margin-bottom: 2%; margin-top: 1%; display: inline-block; color: white;">{{course.courseid}}</h6>
+            <hr style="margin-top: 2%; margin-bottom: 2%;">
+    
+            <p class="card-text"><b style="color: darkblue; font-size: large; margin-bottom: 1%;">{{course.description}}</b></p>
+            <hr style="margin-top: 2%; margin-bottom: 2%;">
+    
+            <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Level : </b><b style="margin-left: 12%">{{course.skilllevel}}</b></div>
+            <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Language : </b><b style="margin-left: 7%">{{course.language}}</b></div>
+            <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Course Type : </b><b style="margin-left: 4.2%">{{course.coursetype}} contents</b></div>
+            <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Instructor : </b><b style="margin-left: 7%">{{course.instructorname}} - {{course.instructorinstitution}}</b></div>
+            <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Enrolled Date : </b><b style="margin-left: 3%">{{course.enrolleddate}}</b></div>
+            <div><b style="color: darkred; font-size: large; margin-bottom: 1%;">Learners : </b><b style="margin-left: 8.5%">{{course.enrolledcount}} learners enrolled previously</b></div>
+            <hr style="margin-top: 2%; margin-bottom: 2%;">
+    
+            <div>
+                <strong style="font-size: large;">Features </strong>
+                <label style="font-weight: large; margin-left: 10%;">Available on <span style="color: blueviolet; font-weight: bold;">Android</span> and <span style="color: blueviolet; font-weight: bold;">iOS</span></label>
+            </div>
+            <hr style="margin-top: 2%; margin-bottom: 2%;">
+    </div>
+    </div>
+    
+    <br><br>
+    <app-footer></app-footer>
+
